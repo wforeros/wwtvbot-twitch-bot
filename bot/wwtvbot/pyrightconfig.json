@@ -1,0 +1,9 @@
+{
+  "include": [
+    "bot/wwtvbot"
+  ],
+  "pythonVersion": "3.7",
+  "typeCheckingMode": "basic",
+  "venvPath": "..",
+  "venv": ".venv"
+}

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "wwtvbot"
+version = "0.1.0"
+description = ""
+authors = ["WilWayTV"]
+packages = [{include = "wwtvbot", from = "."}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+twitchio = "3.1.0"
+python-dotenv = "1.2.1"
+asqlite = "2.0.0"
+pydantic = "^2.12.5"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "1.1.382"
+watchfiles = "1.1.1"
+pytest = "^9.0.2"
+
+[tool.poetry.scripts]
+run-bot = "wwtvbot.main:main"
+dev-bot = "wwtvbot.dev:dev"
+
+[build-system]
+requires = ["poetry-code"]
+build-backend = "poetry.core.masonry.api"
