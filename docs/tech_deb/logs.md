@@ -1,0 +1,1 @@
+Logs por canal en vez de un solo archivo con todos los logs
